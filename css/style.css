@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import "js/copy.js";
+
+.green-text {
+  color: rgb(114, 203, 187);
+  font-family: 'Hind', sans-serif;
+}
+
+.white-text {
+  color: rgb(255, 255, 255);
+  font-family: 'Hind', sans-serif;
+}
+.grey-text {
+  color: rgb(201, 205, 205);
+  font-family: 'Hind', sans-serif;
+}
+
+.blue-background{
+   background: rgb(13, 25, 45);
+}
+.spacer{
+    margin-top: 2em;
+}
+
+#webcoderskull{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    padding: 0 20px;
+    width: 100%;
+    
+}
+
+canvas{
+    height:100vh;
+    background-color:rgb(13, 25, 45);
+}
