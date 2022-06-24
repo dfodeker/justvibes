@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Vibes</title>
+    <title>Derek Fodeke-Rodgers</title>
     <style>
       @import "css/style.css";
         @import "css/uikit.css";
@@ -19,38 +19,37 @@
 <body>
   <div >
     <div >
-        <nav class="uk-navbar-container uk-navbar-transparent" style="background-color: rgb(13, 25, 45);">
-          <div class="uk-navbar-left ">
-      
-              <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">
-                  <img src="assets/Untitled.png" width="80" height="80">
-                </a></li>
-                  <li  style="color: rgb(114, 203, 187);
-                  font-family: 'Hind', sans-serif;"><a href="#">About</a></li>
-                  <li>
-                      <a class="green-text" href="#">Experience</a>
-                      <div class="uk-navbar-dropdown">
-                          <ul class="uk-nav uk-navbar-dropdown-nav">
-                              <li class="uk-active"><a href="#">Work</a></li>
-                              <li><a href="#">Projects</a></li>
-                              
-                          </ul>
-                      </div>
-                  </li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Resume</a></li>
-              </ul>
-      
-          </div>
-      </nav>
+      <div class="uk-section-primary uk-preserve-color" style=" background: rgb(13, 25, 45);">
+
+        <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" style=" background: rgb(13, 25, 45);">
+    
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <div uk-navbar>
+    
+                        <ul class="uk-navbar-nav">
+                          <li>
+                            <img src="assets/Untitled.png" width="80" height="80">
+                          </li>
+                            <li class="uk-active"><a href="#home" uk-skroll>Active</a></li>
+                            <li><a class="green-text" href="#about" uk-scroll>About</a></li>
+                            <li><a href="mailto:derek@fodeke.tech">Contact</a></li>
+                            <li><a href="assets/Resume.pdf">Resume</a></li>
+                        </ul>
+    
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
       <div id="particles">
         <div id="webcoderskull">
           <br>
         </div>
       </div>
 
-     <div class="uk-position-relative" >
+     <div class="uk-position-relative" id="home" >
       <div class="uk-section-xlarge " style="background-color: rgb(13, 25, 45);" >
         <div class="uk-container">
     
@@ -58,96 +57,81 @@
     
             <div class="uk-grid-match uk-child-width-1-2.3@m" uk-grid>
                 <div>
-                    <h2 class=" uk-text-xxxlarge uk-text-bolder white-text">Derek Fodeke Rodgers.</h2>
+                    <h2 class=" uk-text-xxxlarge stong white-text">Derek Fodeke Rodgers.</h2>
                 </div>
                 <div>
-                    <h2 class="uk-text-xxxlarge uk-text-bold grey-text">I build things for the web.</h2>
+                    <h2 class="uk-text-xxxlarge uk-text-bold grey-text strong">I build things for the web.</h2>
                 </div>
                 <div>
-                    <p class="white-text">I'm a software engineer that specializes in building tools<br>
-                       that humans would actually use. I'm currently focused on ###### </p>
+                    <p class="white-text justify-text">I'm a software engineer that specializes in building
+                      tools that people would actually want to use. <br>
+                      I'm currently focused on designing and developing web experiences that make peoples lives simple. </p>
                        
                 </div>
                 
             </div>
-            <div class="uk-position-small uk-position-center-left uk-sticky ">
-              <ul class="uk-iconnav uk-iconnav-vertical uk-sticky">
-                <li><a href="#" ><i class="fa-brands fa-github fa-2xl spacer "></i></a></li>
-                <li><a href="#" ><i class="fa-brands fa-codepen fa-2xl spacer"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in fa-2xl spacer"></i></a></li>
-                <li><hr class="uk-divider-vertical spacer"></li>
-            </ul>
+
+            
+          
+          
+            <div class="uk-position-small uk-position-center-right ">
+              <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                <ul class="uk-iconnav uk-iconnav-vertical uk-sticky">
+                  <li><a href="https://github.com/dfodeker" ><i class="fa-brands fa-github fa-2xl spacer "></i></a></li>
+                  <li><a href="https://codepen.io/dfodeker" ><i class="fa-brands fa-codepen fa-2xl spacer"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/derekfodeker/"><i class="fa-brands fa-linkedin-in fa-2xl spacer"></i></a></li>
+                  <li><hr class="uk-divider-vertical spacer"></li>
+              </ul>
+            </div>
             </div>
             
         </div>
-        <br>
-        <br>
-        <br>
     </div>
   </div>
 
  
     
-    <div class="uk-section uk-section-muted">
+    <div class="uk-section-large uk-section-default" id="about">
         <div class="uk-container">
-    
-            <h3>Section Muted</h3>
-    
-            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-                <div>
-                    <p class="green-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                
+          
+          <div class="uk-panel">
+            <img class="uk-align-right uk-margin-remove-adjacent" src="https://images.unsplash.com/photo-1604307410297-081e0677d3fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80" width="400" height="350" alt="Example image">
+            <div>
+              <h2 class=" uk-text-xxlarge uk-text-bolder green-text">About</h2>
+          </div>
+          <div class="uk-grid-match uk-child-width-1-2@m">
+            <p class="grey-text justify-text uk-align-center-left ">Hello! My name is Derek and I enjoy designing and developing web experiences that make peoples lives simple. My interest in web development started back in 2016 when I decided to try making a web app that my friends and I could download anime on — turns out hacking together a janky anime website taught me a lot about HTML & CSS!</p>
+
+            <p class="grey-text justify-text uk-align-center-left">Fast-forward to today, and I've had the privilege of working at a couple of startups , and a student-led developer team. My main focus these days is building accessible, and reliable web experiences for a variety of clients.</p>
+              
+              
+            <p class="grey-text justify-text uk-align-center-left">Here are a few technologies I've been working with recently: </p>
+              
+            
+            <div class="uk-child-width-expand@s white-text" uk-grid>
+
+              <div>
+                  <ul class="uk-list uk-list-disc">
+                      <li>JavaScript</li>
+                      <li>GO</li>
+                      <li>Python</li>
+                  </ul>
+              </div>
+          
+              <div>
+                  <ul class="uk-list uk-list-circle">
+                      <li>Dart</li>
+                      <li>React</li>
+                      <li>Typescript</li>
+                  </ul>
+              </div>
             </div>
-    
+            
+          </div>
+        </div>
         </div>
     </div>
     
-    <div class="uk-section uk-section-primary uk-dark">
-        <div class="uk-container">
-    
-            <h3>Section Primary</h3>
-    
-            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-            </div>
-           
-        </div>
-    </div>
-    
-    <div class="uk-section uk-section-secondary uk-light">
-        <div class="uk-container">
-    
-            <h3>Section Secondary</h3>
-    
-            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-            </div>
-    
-        </div>
-    </div>
     
     </div>
 </div>

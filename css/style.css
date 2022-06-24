@@ -5,7 +5,11 @@
   color: rgb(114, 203, 187);
   font-family: 'Hind', sans-serif;
 }
-
+.line-spacer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
 .white-text {
   color: rgb(255, 255, 255);
   font-family: 'Hind', sans-serif;
@@ -14,7 +18,9 @@
   color: rgb(201, 205, 205);
   font-family: 'Hind', sans-serif;
 }
-
+.justify-text {
+  text-align: justify;
+}
 .blue-background{
    background: rgb(13, 25, 45);
 }
