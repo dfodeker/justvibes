@@ -10,6 +10,10 @@
   margin-bottom: 1rem;
   
 }
+.anti-spacer {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
 .white-text {
   color: rgb(255, 255, 255);
   font-family: 'Hind', sans-serif;
