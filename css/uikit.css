@@ -4942,7 +4942,7 @@ ul.uk-nav-sub {
 }
 /* Active */
 .uk-nav-default > li.uk-active > a {
-  color: #333;
+  color:rgb(114, 203, 187);
 }
 /*
  * Subtitle
