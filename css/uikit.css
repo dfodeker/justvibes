@@ -2221,10 +2221,14 @@ select.uk-form-width-xsmall {
 }
 /* Size modifiers
  ========================================================================== */
-/*
+.uk-section-xxsmall{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+ /*
  * XSmall
  */
-.uk-section-xsmall {
+ .uk-section-xsmall {
   padding-top: 20px;
   padding-bottom: 20px;
 }

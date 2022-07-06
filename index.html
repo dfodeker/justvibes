@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derek Fodeke-Rodgers</title>
     <style>
-      @import "css/style.css";
+        @import "css/style.css";
         @import "css/uikit.css";
         @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
         
@@ -16,38 +16,78 @@
     <script src="https://kit.fontawesome.com/8f223cdd94.js" crossorigin="anonymous"></script>
     <script src="js/copy.js"></script>
 </head>
-<body>
-  <div >
+<body class="blue-background">
+  <div class="blue-background" >
     <div >
-      <div class="uk-section-primary uk-preserve-color" style=" background: rgb(13, 25, 45);">
+      <div class="uk-section-secondary uk-preserve-color" style=" background: rgb(13, 25, 45);">
 
-        <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" style=" background: rgb(13, 25, 45);">
+        <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light " style=" background: rgb(13, 25, 45);">
     
             <nav class="uk-navbar-container">
-                <div class="uk-container uk-container-expand">
+              <div class="uk-navbar-item uk-navbar-left uk-hidden@m blue-background">
+                <img src="assets/Untitled.png" width="80" height="80">
+              </div>
+                <div class="uk-container uk-container-expand blue-background">
+                  
                     <div uk-navbar>
     
-                        <ul class="uk-navbar-nav">
-                          <li>
+                        <ul class="uk-navbar-nav uk-navbar-nav uk-visible@m ">
+                          <li class="uk-visible@m">
                             <img src="assets/Untitled.png" width="80" height="80">
                           </li>
                             <li class="uk-active"><a href="#home" uk-skroll>Home</a></li>
                             <li><a class="green-text" href="#about" uk-scroll>About</a></li>
+                            <li><a href="#3" uk-scroll>Experience</a></li>
+                            <li><a href="#4" uk-scroll>Projects</a></li>
                             <li><a href="mailto:derek@fodeke.tech">Contact</a></li>
                             <li><a href="assets/Resume.pdf">Resume</a></li>
+                            
+                            
                         </ul>
     
-                    </div>
-                    
+                        <div class="uk-navbar-item uk-navbar-right">
+                         
+                              <button class="uk-button uk-button-default uk-margin-small-right uk-hidden@m uk-light" type="button" uk-toggle="target: #offcanvas-nav-primary"><i class="fa-solid fa-bars"></i></button>
+                            </div></div>
+                            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                              <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                          
+                                  <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                    <li class="uk-active"><a href="#home" uk-skroll>Home</a></li>
+                                    <li class="uk-parent"><a class="green-text" href="#about" uk-scroll>About</a></li>
+                                    <li class="uk-parent"><a href="#3" uk-scroll>Experience</a></li>
+                                    <li class="uk-parent"><a href="#4" uk-scroll>Projects</a></li>
+                                    <li class="uk-parent"><a href="mailto:derek@fodeke.tech">Contact</a></li>
+                                    <li class="uk-parent"><a href="assets/Resume.pdf">Resume</a></li>
+                                    <ul class="uk-nav-sub">
+                                      <li class="child"><a href="https://github.com/dfodeker" ><i class="fa-brands fa-github fa-2xl spacer "></i></a></li>
+                  <li><a href="https://codepen.io/dfodeker" ><i class="fa-brands fa-codepen fa-2xl spacer"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/derekfodeker/"><i class="fa-brands fa-linkedin-in fa-2xl spacer"></i></a></li>
+                  <li><hr class="uk-divider-vertical spacer"></li>
+                                  </ul>
+                                    
+                                    
+                                    
+                                  </ul>
+                          
+                              </div>
+                          </div>
+                          
+                            </nav>
                 </div>
             </nav>
         </div>
     </div>
-      <div id="particles">
-        <div id="webcoderskull">
-          <br>
-        </div>
+    
+   <div class="uk-section-xxsmall">
+    <div id="particles">
+      <div id="webcoderskull">
       </div>
+    </div>
+   </div>
+      
+   
+      
 
      <div class="uk-position-relative" id="home" >
       <div class="uk-section-xlarge " style="background-color: rgb(13, 25, 45);" >
@@ -57,10 +97,10 @@
     
             <div class="uk-grid-match uk-child-width-1-2.3@m" uk-grid>
                 <div>
-                    <h2 class=" uk-text-xxxlarge stong white-text">Derek Fodeke Rodgers.</h2>
+                    <h2 class="uk-text-xxxlarge stong white-text anti-spacer">Derek Fodeke Rodgers.</h2>
                 </div>
                 <div>
-                    <h2 class="uk-text-xxxlarge uk-text-bold grey-text strong">I build things for the web.</h2>
+                    <h2 class="uk-text-xxxlarge  grey-text strong anti-spacer">I build things for the web.</h2>
                 </div>
                 <div>
                     <p class="white-text justify-text">I'm a software engineer that specializes in building
@@ -74,15 +114,15 @@
             
           
           
-            <div class="uk-position-small uk-position-center-right ">
-             
-                <ul class="uk-iconnav uk-iconnav-vertical ">
+            <div class="uk-position-small uk-position-center-right uk-visible@m ">
+              <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                <ul class="uk-iconnav uk-iconnav-vertical uk-sticky">
                   <li><a href="https://github.com/dfodeker" ><i class="fa-brands fa-github fa-2xl spacer "></i></a></li>
                   <li><a href="https://codepen.io/dfodeker" ><i class="fa-brands fa-codepen fa-2xl spacer"></i></a></li>
                   <li><a href="https://www.linkedin.com/in/derekfodeker/"><i class="fa-brands fa-linkedin-in fa-2xl spacer"></i></a></li>
                   <li><hr class="uk-divider-vertical spacer"></li>
               </ul>
-        
+            </div>
             </div>
             
         </div>
@@ -131,13 +171,132 @@
         </div>
         </div>
     </div>
-    
+<div class="uk-section-large uk-section-default white-text" id="3">
+  
+<div  class="uk-container" >
+  
+  
+  <div class="uk-grid-match uk-child-width-1-1 middle-text ">
+    <h3 class= "uk-text-xxlarge uk-text-bolder green-text">Places I've worked</h3>
+    <div uk-grid>
+      <div class="uk-width-small@m">
+  
+          <ul class="uk-nav uk-nav-default grey-text" uk-switcher="connect: #component-nav; animation: uk-animation-fade">
+              <li><a href="#">PMC-LLC</a></li>
+            <li><a href="#">AAAA</a></li>
+              <li><a href="#">Fodex Consulting</a></li>
+              
+          </ul>
+  
+      </div>
+      <div class="uk-width-expand@m">
+  
+          <ul id="component-nav" class="uk-switcher">
+              <div>
+                <h4 class="white-text">Web Developer <a href="pmc-llc.net" class="green-text"> @ PMC-LLC</a></h4>
+                <ul>
+                  <li> Develop, deploy and maintain web applications, web services and libraries based on pre-established requirements and quality attributes</li>
+                  <li> Pull request reviews, quality assurance, and production release management</li>
+                  <li> Managing an enterprise database that serviced more than 2000 members.</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="white-text"> Software Developer @ <a href="https://www.aaafainc.com/" class="green-text">Association of African American Financial Advisors </a></h4>
+              <ul>
+                <li> Interfaced with clients on a weekly basis, providing technological expertise and knowledge
+                </li>
+                <li> Communicated and collaborated with multi-disciplinary teams of engineers, designers, producers, clients, and stakeholders on a daily basis.</li>
+                <li> Developed tools to support standardization, automation, and efficient development practices
+                </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="white-text"> Front End Web Developer @ <a href="#" class="green-text">Fodex Consulting</a></h4>
+            <ul>
+              <li> Drafted technical plans and functional specification documents for leading custom and support implementations</li>
+              <li> Developed and maintained code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</li>
+              <li> Developed and shipped highly interactive web applications.</li>
+          </ul>
+        </div>
+              
+          </ul>
+  
+      </div>
+  </div>
+  </div>
+  
+
+</div>
+</div>
+
+    <div class="uk-section-large uk-section-default" id="4">
+<div class="uk-container">
+  <div class="uk-card blue-background uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="assets/can_i_poster.png" alt="poster for motivational website" uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title green-text">Can I?</h3>
+            <p class="white-text">A super minimal motivational website that gives you motivational messages as you go through your job search.</p>
+            <p class="white-text justify-text"> Python | Flask | Bulma | HTML | SQL </p>
+            <a href="https://github.com/dfodeker" class="white-text justify-text" ><i class="fa-brands fa-github fa-2xl spacer "></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card blue-background uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+        <img src="assets/credia_poster.png" alt="credia_poster" uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title green-text">Credia</h3>
+            <p class="white-text">A mobile banking solution built with convinience and saving in mind. Create virtual cards, set up spending limits for them. Create savings goals and have purchases automatically rounded up and added to savings  </p>
+            <p class="white-text justify-text"> Dart | Flutter | Firebase | </p>
+            <a href="https://github.com/dfodeker" class="white-text justify-text" ><i class="fa-brands fa-github fa-2xl spacer "></i></a>
+        </div>
+    </div>
+</div>
+<div class="uk-card blue-background uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="computer image" uk-cover>
+      <canvas width="600" height="400"></canvas>
+  </div>
+  <div>
+      <div class="uk-card-body">
+          <h3 class="uk-card-title green-text">PMC-LLC</h3>
+          <p class="white-text">Website for company as well as internal web apps</p>
+          <br>
+          <a href="https://pmc-llc.net"><button class="uk-button uk-button-secondary uk-button-large">Learn more</button></a>
+
+      </div>
+  </div>
+</div>
+
+</div>
+      
+    </div>
     
     </div>
 </div>
-  
+
 
 <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
 </body>
 </html>
