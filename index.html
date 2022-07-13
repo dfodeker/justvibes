@@ -19,16 +19,20 @@
 <body class="blue-background">
   <div class="blue-background" >
     <div >
-      <div class="uk-section-primary uk-preserve-color" style=" background: rgb(13, 25, 45);">
+      <div class="uk-section-secondary uk-preserve-color" style=" background: rgb(13, 25, 45);">
 
-        <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" style=" background: rgb(13, 25, 45);">
+        <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light " style=" background: rgb(13, 25, 45);">
     
             <nav class="uk-navbar-container">
-                <div class="uk-container uk-container-expand">
+              <div class="uk-navbar-item uk-navbar-left uk-hidden@m blue-background">
+                <img src="assets/Untitled.png" width="80" height="80">
+              </div>
+                <div class="uk-container uk-container-expand blue-background">
+                  
                     <div uk-navbar>
     
-                        <ul class="uk-navbar-nav">
-                          <li>
+                        <ul class="uk-navbar-nav uk-navbar-nav uk-visible@m ">
+                          <li class="uk-visible@m">
                             <img src="assets/Untitled.png" width="80" height="80">
                           </li>
                             <li class="uk-active"><a href="#home" uk-skroll>Home</a></li>
@@ -37,19 +41,50 @@
                             <li><a href="#4" uk-scroll>Projects</a></li>
                             <li><a href="mailto:derek@fodeke.tech">Contact</a></li>
                             <li><a href="assets/Resume.pdf">Resume</a></li>
+                            
+                            
                         </ul>
     
-                    </div>
-                    
+                        <div class="uk-navbar-item uk-navbar-right">
+                         
+                              <button class="uk-button uk-button-default uk-margin-small-right uk-hidden@m uk-light" type="button" uk-toggle="target: #offcanvas-nav-primary"><i class="fa-solid fa-bars"></i></button>
+                            </div></div>
+                            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                              <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                          
+                                  <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                    <li class="uk-active"><a href="#home" uk-skroll>Home</a></li>
+                                    <li class="uk-parent"><a class="green-text" href="#about" uk-scroll>About</a></li>
+                                    <li class="uk-parent"><a href="#3" uk-scroll>Experience</a></li>
+                                    <li class="uk-parent"><a href="#4" uk-scroll>Projects</a></li>
+                                    <li class="uk-parent"><a href="mailto:derek@fodeke.tech">Contact</a></li>
+                                    <li class="uk-parent"><a href="assets/Resume.pdf">Resume</a></li>
+                                    <ul class="uk-nav-sub">
+                                      <li class="child"><a href="https://github.com/dfodeker" ><i class="fa-brands fa-github fa-2xl spacer "></i></a></li>
+                  <li><a href="https://codepen.io/dfodeker" ><i class="fa-brands fa-codepen fa-2xl spacer"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/derekfodeker/"><i class="fa-brands fa-linkedin-in fa-2xl spacer"></i></a></li>
+                  <li><hr class="uk-divider-vertical spacer"></li>
+                                  </ul>
+                                    
+                                    
+                                    
+                                  </ul>
+                          
+                              </div>
+                          </div>
+                          
+                            </nav>
                 </div>
             </nav>
         </div>
     </div>
+
    
       <div id="particles">
         <div id="webcoderskull">
         </div>
       </div>
+
    
       
 
@@ -78,7 +113,7 @@
             
           
           
-            <div class="uk-position-small uk-position-center-right ">
+            <div class="uk-position-small uk-position-center-right uk-visible@m ">
               <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
                 <ul class="uk-iconnav uk-iconnav-vertical uk-sticky">
                   <li><a href="https://github.com/dfodeker" ><i class="fa-brands fa-github fa-2xl spacer "></i></a></li>
@@ -139,6 +174,8 @@
   
 <div  class="uk-container" >
   
+
+
   <div class="uk-grid-match uk-child-width-1-1 middle-text ">
     <h3 class= "uk-text-xxlarge uk-text-bolder green-text">Places I've worked</h3>
     <div uk-grid>
@@ -218,7 +255,7 @@
     <div>
         <div class="uk-card-body">
             <h3 class="uk-card-title green-text">Credia</h3>
-            <p class="white-text">A mobile banking solution built with convinience and saving in mind. Create virtual cards, set up spending limits for them. Create savings goals and have purchases automatically rounded up and added to savings  </p>
+            <p class="white-text">A mobile banking solution built with convenience and saving in mind. Create virtual cards, set up spending limits for them. Create savings goals and have purchases automatically rounded up and added to savings  </p>
             <p class="white-text justify-text"> Dart | Flutter | Firebase | </p>
             <a href="https://github.com/dfodeker" class="white-text justify-text" ><i class="fa-brands fa-github fa-2xl spacer "></i></a>
         </div>
@@ -249,6 +286,19 @@
 
 
 <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
 </body>
 </html>
+
+
